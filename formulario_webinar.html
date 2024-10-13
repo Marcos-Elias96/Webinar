@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elias Avila Marcos Ernesto Grupo:IC-25M No. Lista: 8</title>
+    
+</head>
+<body>
+    <h1>Formulario de Registro para el Webinar</h1>
+    
+       <form action="Procesar_webinar.php" method="POST">
+       <label for="nombre">Nombre completo:</label>
+       <input type="text" id="nombre" name="nombre" required><br><br>
+       <label for="correo">Correo Electrónico:</label>
+       <input type="email" id="correo" name="correo" required><br><br>
+       <!-- Campo para el teléfono -->
+        <label for="telefono">Teléfono:</label>
+        <input type="text" id="telefono" name="telefono" required><br><br>
+        </form>
+       <!-- Botones de opción para la fuente de información -->
+       <label>¿Cómo te enteraste del webinar?</label><br>
+       <input type="radio" id="email" name="fuente" value="Email" required>
+       <label for="email">Email</label><br>
+       <input type="radio" id="redes" name="fuente" value="Redes Sociales" required>
+       <label for="redes">Redes Sociales</label><br>
+       <input type="radio" id="amigo" name="fuente" value="Amigo" required>
+       <label for="amigo">Amigo</label><br><br>
+       <label for="temas_interes"> Temas de Interés:</label><br>
+
+       <select id="temas_interes" name="temas_interes[]" multiple required>
+       <option value="Tecnología">Tecnología</option>
+       <option value="Educación">Educación</option>
+       <option value="Salud">Salud</option>
+       <option value="Negocios">Negocios</option>
+</form>
+
+        </select><br>
+     <!-- Casillas de verificación para opciones de participación -->
+       <label>Opciones de Participación:</label><br>
+       <input type="checkbox" id="certificado" name="opciones[]" value="Certificado">
+       <label for="certificado">Deseo recibir un certificado</label><br>
+       <input type="checkbox" id="grabacion" name="opciones[]" value="Grabación">
+       <label for="grabacion">Deseo recibir la grabación</label><br><br>
+</form>
+       <!-- Área de texto para comentarios -->
+       <label for="comentarios">Comentarios o Preguntas:</label><br>
+       <textarea id="comentarios" name="comentarios" rows="4" cols="50"></textarea><br><br>
+</form>
+       <!-- Área de texto para comentarios -->
+       <label for="comentarios">Comentarios o Preguntas:</label><br>
+       <textarea id="comentarios" name="comentarios" rows="4" cols="50"></textarea><br><br>
+</form>
+       <!-- Botón de envío -->
+       <input type="submit" value="Registrarse">
+</body>
+</html>
